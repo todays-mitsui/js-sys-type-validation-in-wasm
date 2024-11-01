@@ -1,0 +1,22 @@
+{
+  "name": "js-sys-type-validation-in-wasm",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "fmt": "npx @biomejs/biome format --write tests/",
+    "test": "npm run build && npm run test:run",
+    "test:run": "vitest run tests/",
+    "build": "npm run build:wasm && npm run gen:bind",
+    "build:wasm": "cargo build --target wasm32-unknown-unknown",
+    "gen:bind": "wasm-bindgen --out-dir pkg --out-name index --target bundler target/wasm32-unknown-unknown/debug/js_sys_type_validation_in_wasm.wasm"
+  },
+  "keywords": [],
+  "author": "Mitsui <todays.mitsui@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "vite-plugin-top-level-await": "^1.4.4",
+    "vite-plugin-wasm": "^3.3.0",
+    "vitest": "^2.1.4"
+  }
+}

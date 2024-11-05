@@ -5,3 +5,5 @@ js_sys::{Array, JsString, Number, Object} を使って型注釈したときに w
 - 元ファイル: [src/lib.rs](https://github.com/todays-mitsui/js-sys-type-validation-in-wasm/blob/master/src/lib.rs)
 - 生成された型定義: [index.d.ts](https://github.com/todays-mitsui/js-sys-type-validation-in-wasm/blob/master/pkg/index.d.ts)
 - 挙動を調べるためのテスト: [tests/index.test.j](https://github.com/todays-mitsui/js-sys-type-validation-in-wasm/blob/master/tests/index.test.js)
+
+@see: [【wasm-bindgen】いろいろな型注釈による wasm の挙動の違いを調べよう](https://blog.mudatobunka.org/entry/2024/11/05/120000)
